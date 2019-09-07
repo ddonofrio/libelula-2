@@ -1,0 +1,1 @@
+../../spigot/bin/start.sh

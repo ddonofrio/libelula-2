@@ -1,0 +1,3 @@
+MINECRAFT_USER="minecraft"
+XMS="8G"                # GB RAM assigned
+NICE_VALUE="-20"        # Highest prio
