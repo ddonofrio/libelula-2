@@ -2,7 +2,10 @@
 Libelula 2 is a public project for creating high performance Minecraft Servers.
 
 Minimum Server requirement for 4 local instances:
-* 6 CPU (12 thread)* 32 GB RAM (6 GB per instance)* 2x256 GB SSD (Use one SSD for the system and the other one for Minecraft /opt/)
+* 6 CPU (12 thread)
+* 32 GB RAM (6 GB per instance)
+* 2x256 GB SSD (Use one SSD for the system and the other one for Minecraft /opt/)
+
 In addition to the scripts and configurations that are is in this repository, it is highly recommended to follow the following OS configurations:
 
 1. Download and use the lates Spigot Buildtool from the URL:
