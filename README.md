@@ -14,6 +14,9 @@ In addition to the scripts and configurations that are is in this repository, it
   tmpfs /tmp tmpfs defaults,noatime,nosuid,nodev,noexec,mode=1777,size=4G 0 0
 3. Create a minecraft user for languishing the instances (do NOT use root)
 
+Recommended OS: Debian 10 (Buster)
+Needed extra packages: libasound2 libasound2-data git sudo screen (+ The latest Oracle Java SDK)
+
 Regarding security, it is highly recommended to install iptables-persitent and ipset-persintent packages.
 
 /etc/iptables/rules.v4 content:
@@ -48,6 +51,3 @@ File /etc/iptables/ipsets Content:
 create whitelist hash:ip family inet hashsize 1024 maxelem 65536
 create blacklist hash:ip family inet hashsize 1024 maxelem 65536
 ```
-
-Recommended OS: Debian 10 (Buster)
-Needed extra packages: libasound2 libasound2-data git sudo screen (+ The latest Oracle Java SDK)
