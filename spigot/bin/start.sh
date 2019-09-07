@@ -2,7 +2,7 @@
 set -e
 
 # Server Configuration Variables
-SERVER_BIN="/opt/minecraft/spigot/bin/spigot*.jar"
+SERVER_BIN="/opt/minecraft/libelula-2/spigot/bin/spigot*.jar"
 SERVER_RES="./server.resouces"
 MINECRAFT_USER="minecraft"
 
@@ -35,13 +35,12 @@ RUN_LINE="java \
  		-XX:NewRatio=3 -XX:+UseThreadPriorities \
         	-XX:SoftRefLRUPolicyMSPerMB=2048 \
         	-XX:CMSInitiatingOccupancyFraction=90 \
-        	-XX:+DisableExplicitGC -XX:+UseConcMarkSweepGC -XX:+CMSParallelRemarkEnabled \
+        	-XX:+DisableExplicitGC -XX:+CMSParallelRemarkEnabled \
         	-XX:MaxGCPauseMillis=50 -XX:ParallelGCThreads=4 \
 	        -XX:+UseAdaptiveGCBoundary -XX:-UseGCOverheadLimit -XX:+UseBiasedLocking \
         	-XX:SurvivorRatio=8 -XX:TargetSurvivorRatio=90 -XX:MaxTenuringThreshold=15 \
         	-ss4M -XX:UseSSE=4 -XX:+UseLargePages \
         	-XX:+UseCompressedOops -XX:+OptimizeStringConcat \
-        	-XX:+AggressiveOpts \
         	-jar $SERVER_BIN \
         	nogui"
 
