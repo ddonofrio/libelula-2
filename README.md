@@ -48,3 +48,7 @@ File /etc/iptables/ipsets Content:
 create whitelist hash:ip family inet hashsize 1024 maxelem 65536
 create blacklist hash:ip family inet hashsize 1024 maxelem 65536
 ```
+
+Recommended OS: Debian 10 (Buster)
+Needed extra packages: libasound2 libasound2-data git sudo screen
++ The latest Oracle Java version.
